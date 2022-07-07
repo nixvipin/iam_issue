@@ -13,7 +13,7 @@ resource "aws_subnet" "private-ap-south-1a" {
 resource "aws_subnet" "private-ap-south-1b" {
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.0.32.0/19"
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-south-1b"
 
   tags = {
     "Name"                            = "private-ap-south-1b"
